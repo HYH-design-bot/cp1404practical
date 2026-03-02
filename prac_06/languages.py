@@ -9,6 +9,4 @@ languages = [python, ruby, visual_basic]
 
 dynamic_languages = [language for language in languages if language.is_dynamic()]
 
-print("The dynamically typed languages are:")
-for language in dynamic_languages:
-    print(f"{language.name}")
+print(f"The dynamically typed languages are:\n" + "\n".join(lang.name for lang in dynamic_languages))
